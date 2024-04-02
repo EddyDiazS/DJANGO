@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte de Ventas</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        #titulo1 {
+            text-align: center;
+            font-size: 24px;
+            color: #6d4c41;
+            margin-bottom: 20px;
+        }
+
+        th {
+            background-color: #795548;
+            color: #fff;
+        }
+
+        .btn-primary {
+            background-color: #8d6e63;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn-primary:hover {
+            background-color: #6d4c41;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 id="titulo1">GRAFICA DE VENTAS POR AÑO</h1>
+        <table class="table table-striped mt-4">
+            <thead>
+                <tr>
+                    <th>Barrio</th>
+                    <th>Mes</th>
+                    <th>Ventas</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in carros %}
+                <tr>
+                    <td>{{ item.barrio }}</td>
+                    <td>{{ item.mes }}</td>
+                    <td>{{ item.cantidad }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <div class="mt-4">
+            {{ grafica1 | safe }}
+        </div>
+
+        <div class="mt-4">
+            {{ grafica2 | safe }}
+        </div>
+
+        <div class="mt-4">
+            {{ grafica3 | safe }}
+        </div>
+
+        <div class="mt-4">
+            {{ grafica4 | safe }}
+        </div>
+
+        <div class="mt-4">
+            {{ grafica5 | safe }}
+        </div>
+
+    </div>
+
+    <div class="text-center mt-4">
+        <button onclick="window.location.href='/admin/'" class="btn btn-primary">Ir a Admin</button>
+        <button onclick="window.location.href='/ventas/'" class="btn btn-primary">Ir a Ventas 2024</button>
+        <button onclick="window.location.href='/ventas2/'" class="btn btn-primary">Ir a Ventas 2023</button>
+        <button onclick="window.location.href='/ventas3/'" class="btn btn-primary">Ir a Ventas 2022</button>
+        <button onclick="window.location.href='/ventas4/'" class="btn btn-primary">Ir a Ventas 2021</button>
+        <button onclick="window.location.href='/ventas5/'" class="btn btn-primary">Ir a Ventas 2020</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+

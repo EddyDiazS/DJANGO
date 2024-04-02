@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Principal</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body, html {
+      height: 100%;
+    }
+    body {
+      background-color: #f3f3f3;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .custom-box {
+      border: 2px solid #8B4513;
+      border-radius: 10px;
+      padding: 40px 20px;
+      text-align: center;
+      background-color: #FFF8DC;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .custom-box h2 {
+      color: #8B4513;
+      font-weight: bold;
+      font-size: 28px;
+    }
+    .custom-box p {
+      color: #555;
+      font-size: 16px;
+    }
+    .custom-box .btn-primary {
+      background-color: #8B4513;
+      border-color: #8B4513;
+      padding: 12px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 25px;
+    }
+    .custom-box .btn-primary:hover {
+      background-color: #A0522D;
+      border-color: #A0522D;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="custom-box">
+          <h2>Ver Reporte de Ventas</h2>
+          <p>Aquí puedes acceder al reporte de ventas</p>
+          <a href="/inventario/templates/inventario/index.html" class="btn btn-primary btn-lg">Ver Reporte</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="custom-box">
+          <h2>Iniciar Sesión</h2>
+          <p>Para acceder a tu cuenta, por favor inicia sesión</p>
+          <a href="inicio.html" class="btn btn-primary btn-lg">Iniciar Sesión</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

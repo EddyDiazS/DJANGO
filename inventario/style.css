@@ -1,0 +1,32 @@
+
+#titulo1 {
+    text-align: center;
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+
+#miBoton {
+    font-size: 18px;
+    padding: 10px 20px;
+}
+.btn-primary {
+    
+    background-color: #007bff; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; 
+}
+.text-center {
+    text-align: center; 
+}
+
+
